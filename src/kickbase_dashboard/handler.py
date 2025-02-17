@@ -4,8 +4,7 @@ import base64
 import requests
 import time
 from dataclasses import dataclass
-from wyscout_api.spinner.Spinner import Spinner
-from wyscout_api.hudl.base import APIHandlerBase
+from kickbase_dashboard.base import APIHandlerBase
 
 
 @dataclass(frozen=True)
