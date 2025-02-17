@@ -4,8 +4,7 @@ from dataclasses import dataclass
 
 @dataclass(frozen=True)
 class APIHandlerBase(ABC):
-    username: str
-    password: str
+    token: str
 
     @abstractmethod
     def retrieve_data(self, url: str, params: dict, headers: dict) -> dict | None:
