@@ -119,8 +119,10 @@ class APIHandler(APIHandlerBase):
         self, league_id: str, player_id: str, timeframe: str
     ):
         """
-        valid value for timeframe is unknown
-
+        valid value for timeframe is 92 or 365
+        -> 92 a quarter year in days
+        -> 365 a full year in days
+        depending which value is chosen it returns the history of the market value for the last 92 days or respectivly 365 days
         """
         return self.retrieve_data(
             os.path.join(
